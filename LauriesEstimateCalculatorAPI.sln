@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2FDA9612-6E30-4A58-82DE-BA94FD4829F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiWebL", "ApiWebL", "{0D24A9B7-DFB9-4F51-BE7C-84D6F5A41E9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{38BA29CC-8AEF-455E-B013-D5BDFB14FA41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{2190EA86-42E4-49E0-A581-6339B302B2CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LauriesEC.Fence", "src\ApiWebL\LauriesEC.Fences\LauriesEC.Fence.csproj", "{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LauriesEC.Fences.Services", "src\BLL\LauriesEC.Fences.Services\LauriesEC.Fences.Services.csproj", "{18D21DB1-8870-40B6-B399-073285D03536}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LauriesEC.Fence.Repositories", "src\DAL\LauriesEC.Fence.Repositories\LauriesEC.Fence.Repositories.csproj", "{38F4AC06-EBB5-41A7-ACD9-B3C85FC7F70C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E161280D-2A12-4C98-93CB-828A3BDF1C1C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LauriesEstimateCalculatorAPI.Test", "LauriesEstimateCalculatorAPI.Test\LauriesEstimateCalculatorAPI.Test.csproj", "{846096E8-EDDB-4CDC-AEEB-DF36661EC4FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D21DB1-8870-40B6-B399-073285D03536}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D21DB1-8870-40B6-B399-073285D03536}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D21DB1-8870-40B6-B399-073285D03536}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D21DB1-8870-40B6-B399-073285D03536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38F4AC06-EBB5-41A7-ACD9-B3C85FC7F70C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F4AC06-EBB5-41A7-ACD9-B3C85FC7F70C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F4AC06-EBB5-41A7-ACD9-B3C85FC7F70C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F4AC06-EBB5-41A7-ACD9-B3C85FC7F70C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{846096E8-EDDB-4CDC-AEEB-DF36661EC4FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{846096E8-EDDB-4CDC-AEEB-DF36661EC4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{846096E8-EDDB-4CDC-AEEB-DF36661EC4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{846096E8-EDDB-4CDC-AEEB-DF36661EC4FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D24A9B7-DFB9-4F51-BE7C-84D6F5A41E9E} = {2FDA9612-6E30-4A58-82DE-BA94FD4829F9}
+		{38BA29CC-8AEF-455E-B013-D5BDFB14FA41} = {2FDA9612-6E30-4A58-82DE-BA94FD4829F9}
+		{2190EA86-42E4-49E0-A581-6339B302B2CA} = {2FDA9612-6E30-4A58-82DE-BA94FD4829F9}
+		{68FD4B89-54D5-45D3-B8C2-5D81A38DB475} = {0D24A9B7-DFB9-4F51-BE7C-84D6F5A41E9E}
+		{18D21DB1-8870-40B6-B399-073285D03536} = {38BA29CC-8AEF-455E-B013-D5BDFB14FA41}
+		{38F4AC06-EBB5-41A7-ACD9-B3C85FC7F70C} = {2190EA86-42E4-49E0-A581-6339B302B2CA}
+		{846096E8-EDDB-4CDC-AEEB-DF36661EC4FC} = {E161280D-2A12-4C98-93CB-828A3BDF1C1C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2BF07D4B-2428-43B5-BF23-41DB6A826FC6}
+	EndGlobalSection
+EndGlobal
