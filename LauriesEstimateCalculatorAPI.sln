@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LauriesEC.Fence", "src\ApiW
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LauriesEC.Fences.Services", "src\BLL\LauriesEC.Fences.Services\LauriesEC.Fences.Services.csproj", "{18D21DB1-8870-40B6-B399-073285D03536}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LauriesEC.Fence.Repositories", "src\DAL\LauriesEC.Fence.Repositories\LauriesEC.Fence.Repositories.csproj", "{38F4AC06-EBB5-41A7-ACD9-B3C85FC7F70C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LauriesEC.Fences.Repositories", "src\DAL\LauriesEC.Fence.Repositories\LauriesEC.Fences.Repositories.csproj", "{38F4AC06-EBB5-41A7-ACD9-B3C85FC7F70C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E161280D-2A12-4C98-93CB-828A3BDF1C1C}"
 EndProject

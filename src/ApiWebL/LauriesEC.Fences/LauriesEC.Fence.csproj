@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\BLL\LauriesEC.Fences.Services\LauriesEC.Fences.Services.csproj" />
+    <ProjectReference Include="..\..\DAL\LauriesEC.Fence.Repositories\LauriesEC.Fences.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>

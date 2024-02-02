@@ -11,3 +11,5 @@
 /src/ApiWebL/LauriesEC.Fences/obj
 /src/BLL/LauriesEC.Fences.Services/obj
 /src/DAL/LauriesEC.Fence.Repositories/obj
+/LauriesEstimateCalculatorAPI.Test/bin/Debug/net6.0
+/src/DAL/LauriesEC.Fence.Repositories/bin/Debug/net6.0
