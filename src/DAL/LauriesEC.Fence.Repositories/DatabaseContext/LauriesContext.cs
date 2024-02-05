@@ -24,6 +24,14 @@ namespace LauriesEC.Fences.Repositories.DatabaseContext
         //    // optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["BloggingDatabase"].ConnectionString);
         //}
 
+        public LauriesContext(DbContextOptions<LauriesContext> options)
+            : base(options)
+        {
+        }
+        public LauriesContext()
+        {
+            
+        }
 
         public MaterialsModel ProcessMaterials(int Id, string Name, decimal Price, int MaterialType)
         {

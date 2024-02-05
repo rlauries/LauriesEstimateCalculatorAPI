@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -13,6 +13,10 @@
   <ItemGroup>
     <ProjectReference Include="..\..\BLL\LauriesEC.Fences.Services\LauriesEC.Fences.Services.csproj" />
     <ProjectReference Include="..\..\DAL\LauriesEC.Fence.Repositories\LauriesEC.Fences.Repositories.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>

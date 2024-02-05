@@ -8,6 +8,6 @@ namespace LauriesEC.Fences.Repositories.Interfaces
 {
     public interface ISupplier
     {
-        decimal GetMaterialById(int id);
+        decimal GetMaterialPriceById(int id);
     }
 }

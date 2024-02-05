@@ -1,4 +1,5 @@
 ﻿using LauriesEC.Fences.Repositories.DataModels;
+using LauriesEC.Fences.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
@@ -8,14 +9,12 @@ using System.Threading.Tasks;
 
 namespace LauriesEC.Fences.Repositories
 {
-    public class Supplier
+    public class Supplier : ISupplier
     {
-        //List<MaterialsModel> materials;
-
         public decimal GetMaterialPriceById(int id) 
         {
 
-            return 0;
+            return id;
         }
 
     }

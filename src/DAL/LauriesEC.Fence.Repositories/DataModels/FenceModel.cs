@@ -17,7 +17,7 @@ namespace LauriesEC.Fences.Repositories.DataModels
     {
        
         public int ID { get; set; }
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public int SqFeet { get; set; }
         public string? NameId { get; set; }
         public string? Size { get; set; }

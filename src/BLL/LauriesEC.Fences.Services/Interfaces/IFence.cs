@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LauriesEC.Fences.Repositories.Interfaces
+namespace LauriesEC.Fences.Services.Interfaces
 {
-    public interface IFences
+    public interface IFence
     {
-        void Load();
+         void Load();
     }
+
+   
 }

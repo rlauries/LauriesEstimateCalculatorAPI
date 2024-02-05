@@ -1,5 +1,5 @@
 ﻿
-using LauriesEC.Fences.Repositories.Interfaces;
+using LauriesEC.Fences.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,14 +8,16 @@ using System.Threading.Tasks;
 
 namespace LauriesEC.Fences.Services.Fences
 {
-    public class AluminumCustom : IFences  
+    public class AluminumCustom : IFence
     {
         public int SqFeet { get; set; }
         public int PostQty { get; set; }
+        public int PostId { get; set; } = 14;
 
         public int TubeWidth { get; set; }
-        public int TubeWidthId = 0;
+        public int TubeWidthId { get; set; } = 0;
         public int Gap {  get; set; }
+
         public int HorizontalTubeQty { get; set; }   
 
 
@@ -27,11 +29,15 @@ namespace LauriesEC.Fences.Services.Fences
             SqFeet = sqFeet;
             TubeWidth = tubeWidth;
             Gap = gap;
+            Load();
         }
         public void Load()
         {
+
             PostQty = (SqFeet / 4 + 1);
             HorizontalTubeQty = (SqFeet/24) * (68 / (TubeWidth + Gap) + 1);
+            
+
         }
     }
 }
