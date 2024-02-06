@@ -46,5 +46,14 @@ namespace LauriesEstimateCalculatorAPI.Test
             Assert.False(response.IsAvailable); 
 
         }
+
+        [Fact]
+        public void GetMaterialById()
+        {
+            int id = 2;
+
+            var response = context.GetMaterialById(id);
+            Assert.Equal(id, response.Id);
+        }
     }
 }

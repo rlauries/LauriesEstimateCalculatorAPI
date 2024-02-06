@@ -15,15 +15,9 @@ namespace LauriesEC.Fences.Repositories.DatabaseContext
 {
     public class LauriesContext : DbContext
     {
-        //var contextOptions = new DbContextOptionsBuilder<Context>().UseSqlServer("Server=JEVISPC\\MSSQLSERVERLOCAL;Database=Lauries;Trusted_Connection=True;").Options;  
-
+       
         SqlConnection connection = new SqlConnection("Data Source=JEVISPC\\MSSQLSERVERLOCAL; Initial Catalog = Lauries; Integrated security=true");
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer("Server=JEVISPC\\MSSQLSERVERLOCAL;Database=Lauries;Trusted_Connection=True;");
-        //    // optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["BloggingDatabase"].ConnectionString);
-        //}
-
+        
         public LauriesContext(DbContextOptions<LauriesContext> options)
             : base(options)
         {
@@ -79,17 +73,17 @@ namespace LauriesEC.Fences.Repositories.DatabaseContext
             }
         }
 
-        public MaterialsModel GetMaterialById(int Id)
+        public MaterialsModel GetMaterialById(MaterialsName materialsName)
         {
             //params SqlParameter[] parameters;
             MaterialsModel material = new MaterialsModel();
             try
             {
                 connection.Open();
-                string storedProcName = "[dbo].[spLauries_GetPriceById]";
+                string storedProcName = "[dbo].[spLauries_GetMaterialById]";
                 var command = new SqlCommand(storedProcName, connection) { CommandType = CommandType.StoredProcedure };
                 //command.Parameters.AddRange(parameters);
-                command.Parameters.Add("@Id", System.Data.SqlDbType.Int).Value = Id;
+                command.Parameters.Add("@Id", System.Data.SqlDbType.Int).Value = materialsName;
                 
 
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LauriesEC.Fences.Repositories.DataModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace LauriesEC.Fences.Repositories.Interfaces
 {
     public interface ISupplier
     {
-        decimal GetMaterialPriceById(int id);
+        MaterialsModel GetMaterialPriceById(MaterialsName materialsName);
     }
 }

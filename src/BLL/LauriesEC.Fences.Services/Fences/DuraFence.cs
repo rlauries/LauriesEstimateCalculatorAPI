@@ -19,7 +19,7 @@ namespace LauriesEC.Fences.Services.Fences
         public int HorizontalTubeId { get; set; } = 2;
         public int ArrowQty { get; set; }
         public int ArrowId { get; set; } = 3;  
-        public int PlasticCap {  get; set; }
+        public int PlasticCapQty {  get; set; }
         public int PlasticCapId { get; set; } = 4;
 
         public DuraFence(int sqFeet, int horizontalTubes)
@@ -37,7 +37,7 @@ namespace LauriesEC.Fences.Services.Fences
             PostQty = (SqFeet / 4 + 1);
             HorizontalTubesQty = (SqFeet * NumberHorizontalTubes / 21 + 1);
             ArrowQty = (SqFeet * 12 / 5 + 1);
-            PlasticCap = (SqFeet / 4 + 1);
+            PlasticCapQty = (SqFeet / 4 + 1);
             
         }
     }

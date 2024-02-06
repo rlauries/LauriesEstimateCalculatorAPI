@@ -13,21 +13,14 @@ namespace LauriesEC.Fence
     }
     public class FencesServices : IFencesServices
     {
-        //IFence _chainLink;
-        //IFence _duraFence;
-        //public List<IFence> Fence;
+        
 
         public Dictionary<FenceType, IFence> Fences { get; set; }
 
         public FencesServices() { }
         public FencesServices(int sqFeet, int horizontalTubes, int tubeWidth, int gap)
         {
-            //_chainLink = new ChainLink(sqFeet);
-            //_duraFence = new DuraFence(sqFeet, horizontalTubes);
-
-            //Fence =  new List<IFence>();
-            //Fence.Add(_chainLink);
-            //Fence.Add(_duraFence);
+            
             Fences = new Dictionary<FenceType, IFence>()
            {
                {FenceType.ChainLink, new ChainLink(sqFeet) },
@@ -50,10 +43,7 @@ namespace LauriesEC.Fence
             return null;
 
         }
-        //public int GetSqFeet()
-        //{
-        //    return chainklink.SqFeet;
-        //}
+    
 
 
     }
