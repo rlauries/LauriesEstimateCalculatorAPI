@@ -21,7 +21,7 @@ namespace LauriesEC.Fence
         public FencesServices(int sqFeet, int horizontalTubes, int tubeWidth, int gap)
         {
             
-            Fences = new Dictionary<FenceType, IFence>()
+           Fences = new Dictionary<FenceType, IFence>()
            {
                {FenceType.ChainLink, new ChainLink(sqFeet) },
                {FenceType.DuraFence, new DuraFence(sqFeet,horizontalTubes) },

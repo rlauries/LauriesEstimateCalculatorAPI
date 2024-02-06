@@ -1,9 +1,12 @@
 ﻿using LauriesEC.Fences.Services.Interfaces;
 using LauriesEC.Fences.Services.Fences;
 
+
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+
+using LauriesEC.Fence.FenceModelFromTheBody;
 
 namespace LauriesEC.Fence.Controller
 {
@@ -18,24 +21,20 @@ namespace LauriesEC.Fence.Controller
             _fencesServices = fence;
         }
 
-        [HttpGet("{typeOfFence},{sqFeet},{horizontalTubes},{tubeWidth},{gap}")]
-        public ActionResult<IFence> GetFenceByTypoOfFence(FenceType typeOfFence, int sqFeet, int horizontalTubes, int tubeWidth, int gap)
+     
+
+        [HttpPost()]
+        public ActionResult<IFence> GetFenceByTypoOfFence([FromBody] FenceModelFromBody viewFence)
         {
-            _fencesServices = new FencesServices(sqFeet,horizontalTubes, tubeWidth, gap);
-            IFence f = _fencesServices.GetFenceByFenceType(typeOfFence);
-            
-            
-            return Ok(f);
+           
+
+            _fencesServices = new FencesServices(viewFence.SqFeet, viewFence.HorizontalTubes, viewFence.TubeWidth, viewFence.Gap);
+            IFence fenceFromDataBase = _fencesServices.GetFenceByFenceType(viewFence.TypeOfFence);
+
+
+            return Ok(fenceFromDataBase);
 
         }
-
-        //[HttpPost()]
-        //public ActionResult<int> GetFenceByTypoOfFence(ModelViewFence modelViewFence)
-        //{
-        //    _fencesServices = new FencesServices(modelViewFence);
-        //    IFence f = _fencesServices.GetFenceByFenceType(typeOfFence);
-        //    return Ok(f);
-         //}
 
 
     }

@@ -21,7 +21,13 @@ namespace LauriesEC.Fence.Controller
         [HttpGet("{id}")]
         public ActionResult<MaterialsModel> GetMaterialById(MaterialsName id)
         {
-            return Ok(materialSupplier.GetMaterialPriceById(id));
+         //validatio for Id null Bad request
+            return Ok(materialSupplier.GetMaterialById(id));
         }
+        //[HttpPost("{price}")]
+        //public ActionResult UpdateMaterialPrice(decimal price)
+        //{
+
+        //}
     }
 }
