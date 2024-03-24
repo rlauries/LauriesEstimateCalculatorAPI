@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LauriesEC.Service.Calculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f61d0a0cd540a0755f2c9d44274529ce3d3e7b37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d50fe837d7238f1045503f8c38073a791bfa536")]
 [assembly: System.Reflection.AssemblyProductAttribute("LauriesEC.Service.Calculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LauriesEC.Service.Calculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

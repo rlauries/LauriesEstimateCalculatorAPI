@@ -60,6 +60,7 @@ namespace LauriesEC.Service.Calculator
             invoice.FenceCard = _fencesServices.PrintFenceCard(viewFence);
             invoice.PriceWithoutTax = PriceByServiceWithoutTax(viewFence);   
             invoice.TaxRate = invoice.PriceWithoutTax * TaxRateByStateName(viewFence) / 100;
+            invoice.Total = invoice.PriceWithoutTax + invoice.TaxRate;
             return invoice;
         }
 

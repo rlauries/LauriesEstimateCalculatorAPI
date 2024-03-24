@@ -13,7 +13,7 @@ namespace LauriesEC.Service.Calculator
         public IFence FenceCard { get; set; }
         public decimal PriceWithoutTax {  get; set; }
         public decimal TaxRate { get; set; }
-
+        public decimal Total {  get; set; }
 
         public InvoiceModel()
         {
