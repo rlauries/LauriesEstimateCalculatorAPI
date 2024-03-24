@@ -1,0 +1,15 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/LauriesEstimateCalculatorAPI/DesignTimeBuild
+/.vs/LauriesEstimateCalculatorAPI/FileContentIndex
+/.vs/LauriesEstimateCalculatorAPI/v17/.futdcache.v2
+/.vs/LauriesEstimateCalculatorAPI/v17/.suo
+/.vs/ProjectEvaluation
+/LauriesEstimateCalculatorAPI.Test/obj
+/src/ApiWebL/LauriesEC.Fences/obj
+/src/BLL/LauriesEC.Fences.Services/obj
+/src/DAL/LauriesEC.Fence.Repositories/obj
+/LauriesEstimateCalculatorAPI.Test/bin/Debug/net6.0
+/src/DAL/LauriesEC.Fence.Repositories/bin/Debug/net6.0

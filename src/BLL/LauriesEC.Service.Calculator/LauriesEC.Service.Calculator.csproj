@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DAL\LauriesEC.Fence.Repositories\LauriesEC.Fences.Repositories.csproj" />
+    <ProjectReference Include="..\LauriesEC.Fences.Services\LauriesEC.Fences.Services.csproj" />
+  </ItemGroup>
+
+</Project>
