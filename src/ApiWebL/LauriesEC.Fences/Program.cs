@@ -1,9 +1,12 @@
 using LauriesEC.Fence;
 using LauriesEC.Fences.Repositories;
 using LauriesEC.Fences.Repositories.DatabaseContext;
+using LauriesEC.Fences.Repositories.DataModels;
 using LauriesEC.Fences.Repositories.Interfaces;
 using LauriesEC.Fences.Services.Fences;
 using LauriesEC.Fences.Services.Interfaces;
+using LauriesEC.Service.Calculator;
+using LauriesEC.Service.Calculator.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,8 +20,10 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddScoped<IFencesServices, FencesServices>();
-
 builder.Services.AddScoped<ISupplier, Supplier>();
+builder.Services.AddScoped<IPriceByService,  PriceByService>();
+builder.Services.AddScoped<IStateTaxRate, USATaxRate>();
+
 
 
 var app = builder.Build();

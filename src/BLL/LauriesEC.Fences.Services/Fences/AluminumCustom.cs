@@ -18,7 +18,8 @@ namespace LauriesEC.Fences.Services.Fences
         public int TubeWidthId { get; set; } = 0;
         public int Gap {  get; set; }
 
-        public int HorizontalTubeQty { get; set; }   
+        public int HorizontalTubeQty { get; set; }
+        public Dictionary<int, int> MaterialList { get; set; }
 
 
         public AluminumCustom(int sqFeet, int tubeWidth, int gap)
@@ -29,15 +30,16 @@ namespace LauriesEC.Fences.Services.Fences
             SqFeet = sqFeet;
             TubeWidth = tubeWidth;
             Gap = gap;
-            Load();
+            GetMaterialList();
         }
-        public void Load()
+        public Dictionary<int, int> GetMaterialList()
         {
-
-            PostQty = (SqFeet / 4 + 1);
-            HorizontalTubeQty = (SqFeet/24) * (68 / (TubeWidth + Gap) + 1);
-            
-
+            MaterialList = new Dictionary<int, int>()
+            {
+                {14, (SqFeet / 4 + 1) },
+                {TubeWidthId, (SqFeet/24) * (68 / (TubeWidth + Gap) + 1) }
+            };
+            return MaterialList; 
         }
     }
 }

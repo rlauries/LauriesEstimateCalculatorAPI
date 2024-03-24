@@ -19,21 +19,24 @@ namespace LauriesEC.Fences.Repositories
         }
       
 
-        public MaterialsModel GetMaterialById(MaterialsName materialsName) 
+      
+        public MaterialsModel UpdateMaterialPriceById(int materialsId, string name, decimal price, int materialType)
         {
-            MaterialsModel materialFromDataBase = context.GetMaterialById(materialsName); 
+            MaterialsModel materialFromDataBase = context.ProcessMaterials((int)materialsId, name, price, materialType);
             return materialFromDataBase;
         }
-
-        //public MaterialsModel UpdateMaterialPriceById(MaterialsName materialsName, decimal price)
-        //{
-        //    MaterialsModel materialFromDataBase = context.ProcessMaterials(materialsName);
-
-        //}
+        public List<MaterialsModel> ShowMaterialList()
+        {
+            return context.GetMaterialListFromDB();
+        }
+        public MaterialsModel GetMaterialById(int materialId)
+        {
+            return context.GetMaterialById(materialId);
+        }
 
     }
 
-    public enum MaterialsName
+    public enum MaterialId
     {
         Sq2 = 1,
         Rct2x1 = 2,

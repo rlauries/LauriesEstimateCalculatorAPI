@@ -10,6 +10,7 @@
         "dependencies": {
           "LauriesEC.Fences.Repositories": "1.0.0",
           "LauriesEC.Fences.Services": "1.0.0",
+          "LauriesEC.Service.Calculator": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -440,6 +441,15 @@
         "runtime": {
           "LauriesEC.Fences.Services.dll": {}
         }
+      },
+      "LauriesEC.Service.Calculator/1.0.0": {
+        "dependencies": {
+          "LauriesEC.Fences.Repositories": "1.0.0",
+          "LauriesEC.Fences.Services": "1.0.0"
+        },
+        "runtime": {
+          "LauriesEC.Service.Calculator.dll": {}
+        }
       }
     }
   },
@@ -784,6 +794,11 @@
       "sha512": ""
     },
     "LauriesEC.Fences.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LauriesEC.Service.Calculator/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

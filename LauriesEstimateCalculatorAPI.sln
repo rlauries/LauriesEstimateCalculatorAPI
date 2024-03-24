@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E161280D-2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LauriesEstimateCalculatorAPI.Test", "LauriesEstimateCalculatorAPI.Test\LauriesEstimateCalculatorAPI.Test.csproj", "{846096E8-EDDB-4CDC-AEEB-DF36661EC4FC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LauriesEC.Service.Calculator", "src\BLL\LauriesEC.Service.Calculator\LauriesEC.Service.Calculator.csproj", "{92D0E986-8DE6-460F-94E2-CAA3D22C59FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{846096E8-EDDB-4CDC-AEEB-DF36661EC4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{846096E8-EDDB-4CDC-AEEB-DF36661EC4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{846096E8-EDDB-4CDC-AEEB-DF36661EC4FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92D0E986-8DE6-460F-94E2-CAA3D22C59FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92D0E986-8DE6-460F-94E2-CAA3D22C59FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92D0E986-8DE6-460F-94E2-CAA3D22C59FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92D0E986-8DE6-460F-94E2-CAA3D22C59FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{18D21DB1-8870-40B6-B399-073285D03536} = {38BA29CC-8AEF-455E-B013-D5BDFB14FA41}
 		{38F4AC06-EBB5-41A7-ACD9-B3C85FC7F70C} = {2190EA86-42E4-49E0-A581-6339B302B2CA}
 		{846096E8-EDDB-4CDC-AEEB-DF36661EC4FC} = {E161280D-2A12-4C98-93CB-828A3BDF1C1C}
+		{92D0E986-8DE6-460F-94E2-CAA3D22C59FA} = {38BA29CC-8AEF-455E-B013-D5BDFB14FA41}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BF07D4B-2428-43B5-BF23-41DB6A826FC6}

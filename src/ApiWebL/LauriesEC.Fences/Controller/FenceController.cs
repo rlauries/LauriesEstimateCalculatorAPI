@@ -6,7 +6,8 @@ using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-using LauriesEC.Fence.FenceModelFromTheBody;
+using LauriesEC.Fence.Models;
+using LauriesEC.Fence.ExtensionClass;
 
 namespace LauriesEC.Fence.Controller
 {
@@ -15,26 +16,24 @@ namespace LauriesEC.Fence.Controller
     public class FenceController : ControllerBase
     {
         public IFencesServices _fencesServices;
+        
 
         public FenceController(IFencesServices fence) 
         {
             _fencesServices = fence;
         }
 
-     
+       
 
-        [HttpPost()]
-        public ActionResult<IFence> GetFenceByTypoOfFence([FromBody] FenceModelFromBody viewFence)
+        [HttpPost("paperList")]
+        public ActionResult<IFence> GetFencesPaperListInController([FromBody] FenceModelFromTheBody viewFence)
         {
-           
+               var f = _fencesServices.PrintFenceCard(viewFence);
 
-            _fencesServices = new FencesServices(viewFence.SqFeet, viewFence.HorizontalTubes, viewFence.TubeWidth, viewFence.Gap);
-            IFence fenceFromDataBase = _fencesServices.GetFenceByFenceType(viewFence.TypeOfFence);
-
-
-            return Ok(fenceFromDataBase);
-
+            return Ok(f);
         }
+
+       
 
 
     }

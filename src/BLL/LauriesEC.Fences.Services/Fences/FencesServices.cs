@@ -3,6 +3,7 @@ using LauriesEC.Fences.Services.Fences;
 using LauriesEC.Fences.Services.Interfaces;
 
 
+
 namespace LauriesEC.Fence
 {
     public enum FenceType  //FenceType 
@@ -13,38 +14,36 @@ namespace LauriesEC.Fence
     }
     public class FencesServices : IFencesServices
     {
-        
+        public IFence fence { get; set; }
+       
 
-        public Dictionary<FenceType, IFence> Fences { get; set; }
 
         public FencesServices() { }
-        public FencesServices(int sqFeet, int horizontalTubes, int tubeWidth, int gap)
+        
+        public FencesServices(int sqFeet)
         {
+            fence = new ChainLink(sqFeet);
+        }
+
+        public FencesServices(int sqFeet, int horizontalTubing)
+        {
+            fence = new DuraFence(sqFeet, horizontalTubing);
+        }
+        public FencesServices(int sqFeet, int tubeWide, int gap)
+        {
+            fence = new AluminumCustom(sqFeet, tubeWide, gap); 
             
-           Fences = new Dictionary<FenceType, IFence>()
-           {
-               {FenceType.ChainLink, new ChainLink(sqFeet) },
-               {FenceType.DuraFence, new DuraFence(sqFeet,horizontalTubes) },
-               {FenceType.AluminioCustom, new AluminumCustom(sqFeet, tubeWidth, gap) },
-
-           };
-
         }
-
-        public IFence GetFenceByFenceType(FenceType fenceType)
+        
+        
+        public IFence GetFencePaperList()
         {
 
-            foreach (var fence in Fences)
-            {
-                if (fence.Key == fenceType)
-                    return fence.Value;
-
-            }
-            return null;
+            return fence;
 
         }
-    
 
+        
 
     }
 }

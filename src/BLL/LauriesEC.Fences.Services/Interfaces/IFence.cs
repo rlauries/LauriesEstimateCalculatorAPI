@@ -8,7 +8,7 @@ namespace LauriesEC.Fences.Services.Interfaces
 {
     public interface IFence
     {
-         void Load();
+        Dictionary<int, int> GetMaterialList();
     }
 
    

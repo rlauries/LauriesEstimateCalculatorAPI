@@ -11,36 +11,31 @@ namespace LauriesEC.Fences.Services.Fences
     public  class ChainLink : IFence
     {
         public int SqFeet { get; set; }
-        public int PostQty { get; set; }
-        public int PostId { get; set; } = 1;
-        public int TopRailQty { get; set; }
-        public int TopRailId { get; set; } = 9;
-        public int MayaQty { get; set; }
-        public int MayaId { get; set; } = 7;
-        public int EyesTopQty { get; set; }
-        public int EyesTopId { get; set; } = 10;
+        
+        public Dictionary<int, int> MaterialList { get; set; }
 
         public ChainLink(int sqFeet)
         {
             SqFeet = sqFeet;
-            Load();
+            GetMaterialList();
         }
         public ChainLink()
         {
             
         }
+
         
-        public void Load()
+        
+        public Dictionary<int,int> GetMaterialList()
         {
-
-            PostQty = (SqFeet / 4 + 1);
-            
-            TopRailQty = (SqFeet / 21 + 1);
-
-            MayaQty = (SqFeet / 50 + 1);
-            
-            EyesTopQty = (SqFeet / 4 + 1);
-           
+            MaterialList = new Dictionary<int, int>()
+            {
+                {1, (SqFeet / 4 + 1) },
+                {9, (SqFeet / 21 + 1)},
+                {7, (SqFeet / 50 + 1)},
+                {10, (SqFeet / 4 + 1)}
+            };
+            return MaterialList;
         }
         
 

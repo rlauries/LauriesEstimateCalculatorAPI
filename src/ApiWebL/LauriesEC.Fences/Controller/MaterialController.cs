@@ -1,4 +1,5 @@
-﻿using LauriesEC.Fences.Repositories;
+﻿using LauriesEC.Fence.Models;
+using LauriesEC.Fences.Repositories;
 using LauriesEC.Fences.Repositories.DataModels;
 using LauriesEC.Fences.Repositories.Interfaces;
 using LauriesEC.Fences.Services.Interfaces;
@@ -12,22 +13,35 @@ namespace LauriesEC.Fence.Controller
     public class MaterialController : ControllerBase
     {
         ISupplier materialSupplier;
-
+        
         public MaterialController(ISupplier supplier)
         {
             materialSupplier = supplier;
+            
         }
 
-        [HttpGet("{id}")]
-        public ActionResult<MaterialsModel> GetMaterialById(MaterialsName id)
+        [HttpGet("showWholeMatrialList")]
+        public ActionResult<List<MaterialsModel>> ShowMaterialList()
         {
-         //validatio for Id null Bad request
+            return Ok(materialSupplier.ShowMaterialList());
+        }
+
+        [HttpGet("getMaterialById/{id}")]
+        public ActionResult<MaterialsModel> GetMaterialById(int id)
+        {
             return Ok(materialSupplier.GetMaterialById(id));
         }
-        //[HttpPost("{price}")]
-        //public ActionResult UpdateMaterialPrice(decimal price)
-        //{
 
-        //}
+
+        [HttpPost("processMaterials")]
+        public ActionResult UpdateMaterialPrice(MaterialModelFromBody materialFromBody)
+        {
+            MaterialsModel material = materialSupplier.UpdateMaterialPriceById(
+                    materialFromBody.Id,
+                    materialFromBody.Name,
+                    materialFromBody.Price, 
+                    materialFromBody.MaterialType);
+            return Ok(material);
+        }
     }
 }

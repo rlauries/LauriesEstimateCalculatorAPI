@@ -1,4 +1,6 @@
-﻿namespace LauriesEC.Fence.FenceModelFromTheBody
+﻿using LauriesEC.Fence;
+
+namespace LauriesEC.Fence.Models
 {
     public class FenceModelFromBody
     {

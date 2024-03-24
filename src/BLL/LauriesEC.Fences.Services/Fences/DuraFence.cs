@@ -11,34 +11,30 @@ namespace LauriesEC.Fences.Services.Fences
     public class DuraFence : IFence
     {
         public int SqFeet { get; set; }
-        public int PostQty { get; set; }
-        public int PostId { get; set; } = 1;
-
         public int NumberHorizontalTubes { get; set; }  // 2 or 3 horizontal designs
-        public int HorizontalTubesQty {  get; set; }
-        public int HorizontalTubeId { get; set; } = 2;
-        public int ArrowQty { get; set; }
-        public int ArrowId { get; set; } = 3;  
-        public int PlasticCapQty {  get; set; }
-        public int PlasticCapId { get; set; } = 4;
+       
+        public Dictionary<int, int> MaterialList { get; set; }
 
         public DuraFence(int sqFeet, int horizontalTubes)
         {
             SqFeet = sqFeet;
             NumberHorizontalTubes = horizontalTubes;
-            Load();
+            GetMaterialList();
         }
         public DuraFence()
         {
             
         }
-        public void Load() 
+        public Dictionary<int, int> GetMaterialList() 
         {
-            PostQty = (SqFeet / 4 + 1);
-            HorizontalTubesQty = (SqFeet * NumberHorizontalTubes / 21 + 1);
-            ArrowQty = (SqFeet * 12 / 5 + 1);
-            PlasticCapQty = (SqFeet / 4 + 1);
-            
+            MaterialList = new Dictionary<int, int>()
+            {
+                {1, (SqFeet / 4 + 1) },
+                {2, (SqFeet * NumberHorizontalTubes / 21 + 1)},
+                {3, (SqFeet * 12 / 5 + 1)},
+                {4, (SqFeet / 4 + 1)}
+            };
+            return MaterialList;
         }
     }
 }

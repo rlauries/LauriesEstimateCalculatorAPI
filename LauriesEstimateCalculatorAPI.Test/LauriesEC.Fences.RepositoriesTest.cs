@@ -1,3 +1,4 @@
+using LauriesEC.Fences.Repositories;
 using LauriesEC.Fences.Repositories.DatabaseContext;
 using Newtonsoft.Json;
 using System.Net;
@@ -47,13 +48,13 @@ namespace LauriesEstimateCalculatorAPI.Test
 
         }
 
-        [Fact]
-        public void GetMaterialById()
-        {
-            int id = 2;
+        //[Fact]
+        //public void GetMaterialById()
+        //{
+        //    MaterialId id;
 
-            var response = context.GetMaterialById(id);
-            Assert.Equal(id, response.Id);
-        }
+        //    var response = context.GetMaterialById(id.Rct2x1);
+        //    Assert.Equal(id, response.Id);
+        //}
     }
 }

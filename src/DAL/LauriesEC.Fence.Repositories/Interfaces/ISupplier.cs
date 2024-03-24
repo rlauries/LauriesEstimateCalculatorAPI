@@ -9,6 +9,8 @@ namespace LauriesEC.Fences.Repositories.Interfaces
 {
     public interface ISupplier
     {
-        MaterialsModel GetMaterialById(MaterialsName materialsName);
+        List<MaterialsModel> ShowMaterialList();
+        MaterialsModel GetMaterialById(int materialId); 
+        MaterialsModel UpdateMaterialPriceById(int materialsId, string name, decimal price, int materialType);
     }
 }
