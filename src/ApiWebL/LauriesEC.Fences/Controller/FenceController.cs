@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 using LauriesEC.Fence.Models;
 using LauriesEC.Fence.ExtensionClass;
+using LauriesEC.Fences.Repositories.DatabaseContext;
+using LauriesEC.Fences.Repositories.DataModels;
+
 
 namespace LauriesEC.Fence.Controller
 {
@@ -15,12 +18,14 @@ namespace LauriesEC.Fence.Controller
     [Route("api/fence")]
     public class FenceController : ControllerBase
     {
-        public IFencesServices _fencesServices;
+        public IFencesFactory _fencesServices;
+        public LauriesContext _lauriesContext;
         
 
-        public FenceController(IFencesServices fence) 
+        public FenceController(IFencesFactory fence) 
         {
             _fencesServices = fence;
+            _lauriesContext = new LauriesContext();
         }
 
        
@@ -32,7 +37,11 @@ namespace LauriesEC.Fence.Controller
 
             return Ok(f);
         }
-
+        [HttpGet("fenceList")]
+        public ActionResult<List<FenceModel>> GetFenceTypeList()
+        {
+            return Ok(_lauriesContext.GetFenceListFromDB());
+        }
        
 
 

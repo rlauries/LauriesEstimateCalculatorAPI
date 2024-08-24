@@ -1,0 +1,12 @@
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Gate.Services\bin\Debug\net6.0\LauriesEC.Gate.Services.deps.json
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Gate.Services\bin\Debug\net6.0\LauriesEC.Gate.Services.dll
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Gate.Services\bin\Debug\net6.0\LauriesEC.Gate.Services.pdb
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Gate.Services\obj\Debug\net6.0\LauriesEC.Gate.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Gate.Services\obj\Debug\net6.0\LauriesEC.Gate.Services.AssemblyInfoInputs.cache
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Gate.Services\obj\Debug\net6.0\LauriesEC.Gate.Services.AssemblyInfo.cs
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Gate.Services\obj\Debug\net6.0\LauriesEC.Gate.Services.csproj.CoreCompileInputs.cache
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Gate.Services\obj\Debug\net6.0\LauriesEC.Gate.Services.sourcelink.json
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Gate.Services\obj\Debug\net6.0\LauriesEC.Gate.Services.dll
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Gate.Services\obj\Debug\net6.0\refint\LauriesEC.Gate.Services.dll
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Gate.Services\obj\Debug\net6.0\LauriesEC.Gate.Services.pdb
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Gate.Services\obj\Debug\net6.0\ref\LauriesEC.Gate.Services.dll

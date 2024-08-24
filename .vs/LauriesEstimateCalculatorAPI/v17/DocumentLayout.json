@@ -1,0 +1,143 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\apiwebl\\lauriesec.fences\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|solutionrelative:src\\apiwebl\\lauriesec.fences\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\apiwebl\\lauriesec.fences\\models\\signupmodelfrombody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|solutionrelative:src\\apiwebl\\lauriesec.fences\\models\\signupmodelfrombody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{045E6154-7B55-4BAE-8A74-3B687E886B6A}|src\\Security\\Security.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\security\\services\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{045E6154-7B55-4BAE-8A74-3B687E886B6A}|src\\Security\\Security.csproj|solutionrelative:src\\security\\services\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 484,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:264057291:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1342199999:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1485176260:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1842622645:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:350743133:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2037576793:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1033021183:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:529044155:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignUpModelFromBody.cs",
+              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Models\\SignUpModelFromBody.cs",
+              "RelativeDocumentMoniker": "src\\ApiWebL\\LauriesEC.Fences\\Models\\SignUpModelFromBody.cs",
+              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Models\\SignUpModelFromBody.cs",
+              "RelativeToolTip": "src\\ApiWebL\\LauriesEC.Fences\\Models\\SignUpModelFromBody.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T21:39:14.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Controller\\UserController.cs",
+              "RelativeDocumentMoniker": "src\\ApiWebL\\LauriesEC.Fences\\Controller\\UserController.cs",
+              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Controller\\UserController.cs",
+              "RelativeToolTip": "src\\ApiWebL\\LauriesEC.Fences\\Controller\\UserController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAwwBsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T16:40:30.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\Security\\Services\\Login.cs",
+              "RelativeDocumentMoniker": "src\\Security\\Services\\Login.cs",
+              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\Security\\Services\\Login.cs",
+              "RelativeToolTip": "src\\Security\\Services\\Login.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAwwB4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T18:20:59.012Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 46,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

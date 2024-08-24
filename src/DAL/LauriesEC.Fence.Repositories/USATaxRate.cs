@@ -23,5 +23,9 @@ namespace LauriesEC.Fences.Repositories
         {
             return context.GetTaxRateByStateName(stateName);
         }
+        public List<string> GetStateShortener(string stateShortName)
+        {
+            return context.GetStateShortener(stateShortName);
+        }
     }
 }

@@ -6,19 +6,19 @@ namespace LauriesEC.Fence.ExtensionClass
 {
     public static class ExtendFenceCard
     {
-        public static IFence PrintFenceCard(this IFencesServices _fencesServices, FenceModelFromTheBody viewFence)
+        public static IFence PrintFenceCard(this IFencesFactory _fencesServices, FenceModelFromTheBody viewFence)
         {
             if (viewFence.TypeOfFence == FenceType.ChainLink)
             {
-                _fencesServices = new FencesServices(viewFence.SqFeet);
+                _fencesServices = new FencesFactory(viewFence.SqFeet);
             }
             else if (viewFence.TypeOfFence == FenceType.DuraFence)
             {
-                _fencesServices = new FencesServices(viewFence.SqFeet, viewFence.HorizontalTubes);
+                _fencesServices = new FencesFactory(viewFence.SqFeet, viewFence.HorizontalTubes);
             }
             else
             {
-                _fencesServices = new FencesServices(viewFence.SqFeet, viewFence.TubeWidth, viewFence.Gap);
+                _fencesServices = new FencesFactory(viewFence.SqFeet, viewFence.TubeWidth, viewFence.Gap);
             }
             
             return _fencesServices.GetFencePaperList();

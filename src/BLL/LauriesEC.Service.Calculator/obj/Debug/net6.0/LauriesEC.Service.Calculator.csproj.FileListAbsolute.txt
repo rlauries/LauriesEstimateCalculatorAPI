@@ -3,8 +3,10 @@ C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\Lauri
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Service.Calculator\bin\Debug\net6.0\LauriesEC.Service.Calculator.pdb
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Service.Calculator\bin\Debug\net6.0\LauriesEC.Fences.Repositories.dll
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Service.Calculator\bin\Debug\net6.0\LauriesEC.Fences.Services.dll
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Service.Calculator\bin\Debug\net6.0\LauriesEC.Gate.Services.dll
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Service.Calculator\bin\Debug\net6.0\LauriesEC.Fences.Repositories.pdb
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Service.Calculator\bin\Debug\net6.0\LauriesEC.Fences.Services.pdb
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Service.Calculator\bin\Debug\net6.0\LauriesEC.Gate.Services.pdb
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Service.Calculator\obj\Debug\net6.0\LauriesEC.Service.Calculator.csproj.AssemblyReference.cache
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Service.Calculator\obj\Debug\net6.0\LauriesEC.Service.Calculator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\BLL\LauriesEC.Service.Calculator\obj\Debug\net6.0\LauriesEC.Service.Calculator.AssemblyInfoInputs.cache

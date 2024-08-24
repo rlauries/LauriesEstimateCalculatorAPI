@@ -736,6 +736,16 @@
         "runtime": {
           "bin/placeholder/LauriesEC.Fences.Services.dll": {}
         }
+      },
+      "LauriesEC.Gate.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LauriesEC.Gate.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LauriesEC.Gate.Services.dll": {}
+        }
       }
     }
   },
@@ -1941,12 +1951,18 @@
       "type": "project",
       "path": "../LauriesEC.Fences.Services/LauriesEC.Fences.Services.csproj",
       "msbuildProject": "../LauriesEC.Fences.Services/LauriesEC.Fences.Services.csproj"
+    },
+    "LauriesEC.Gate.Services/1.0.0": {
+      "type": "project",
+      "path": "../LauriesEC.Gate.Services/LauriesEC.Gate.Services.csproj",
+      "msbuildProject": "../LauriesEC.Gate.Services/LauriesEC.Gate.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "LauriesEC.Fences.Repositories >= 1.0.0",
-      "LauriesEC.Fences.Services >= 1.0.0"
+      "LauriesEC.Fences.Services >= 1.0.0",
+      "LauriesEC.Gate.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1970,6 +1986,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1978,6 +1995,9 @@
           "projectReferences": {
             "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\BLL\\LauriesEC.Fences.Services\\LauriesEC.Fences.Services.csproj": {
               "projectPath": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\BLL\\LauriesEC.Fences.Services\\LauriesEC.Fences.Services.csproj"
+            },
+            "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\BLL\\LauriesEC.Gate.Services\\LauriesEC.Gate.Services.csproj": {
+              "projectPath": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\BLL\\LauriesEC.Gate.Services\\LauriesEC.Gate.Services.csproj"
             },
             "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\DAL\\LauriesEC.Fence.Repositories\\LauriesEC.Fences.Repositories.csproj": {
               "projectPath": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\DAL\\LauriesEC.Fence.Repositories\\LauriesEC.Fences.Repositories.csproj"
@@ -1989,6 +2009,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2010,7 +2035,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }
