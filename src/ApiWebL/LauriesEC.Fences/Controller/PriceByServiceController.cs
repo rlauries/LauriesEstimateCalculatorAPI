@@ -21,19 +21,31 @@ namespace LauriesEC.Fence.Controller
             _priceByService = priceByServices;
         }
 
-        [HttpPost("PriceByService")]
+        [HttpPost("PanelPrice")]
         public ActionResult<decimal> GetPriceByService([FromBody] FenceModelFromTheBody viewFence)
         {
             var totalPrice = _priceByService.PriceByServiceWithoutTax(viewFence);
 
             return Ok(totalPrice);
         }
+        [HttpGet("GetStateTaxRate/{stateName}")]
+        public ActionResult<decimal> GetStateTaxRate(string stateName)
+        {
+            var taxRate = _priceByService.TaxRateByStateName(stateName);
+            return Ok(taxRate);
+        }
+        [HttpGet("GetStateByShortener/{stateShortName}")]
+        public ActionResult<List<string>> GetStateShortener(string stateShortName)
+        {
+            var nameList = _priceByService.GetStateShortener(stateShortName);
+            return Ok(nameList);
+        }
 
         [HttpPost("Invoice")]
-        public ActionResult<InvoiceModel> GetInvoice([FromBody] FenceModelFromTheBody viewFence)
+        public ActionResult<InvoiceModel> GetInvoice([FromBody] FenceModelFromTheBody viewFence, string stateName)
         { 
             InvoiceModel invoice = new InvoiceModel();
-            invoice = _priceByService.MyInvoice(viewFence, invoice);
+            invoice = _priceByService.MyInvoice(viewFence, stateName, invoice);
             return Ok(invoice);
         }
     }

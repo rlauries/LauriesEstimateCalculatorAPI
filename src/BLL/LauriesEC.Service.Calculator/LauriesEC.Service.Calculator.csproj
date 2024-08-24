@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\DAL\LauriesEC.Fence.Repositories\LauriesEC.Fences.Repositories.csproj" />
     <ProjectReference Include="..\LauriesEC.Fences.Services\LauriesEC.Fences.Services.csproj" />
+    <ProjectReference Include="..\LauriesEC.Gate.Services\LauriesEC.Gate.Services.csproj" />
   </ItemGroup>
 
 </Project>

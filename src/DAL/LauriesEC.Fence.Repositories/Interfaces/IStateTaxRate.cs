@@ -9,5 +9,6 @@ namespace LauriesEC.Fences.Repositories.Interfaces
     public interface IStateTaxRate
     {
         decimal GetTaxRateByStateName(string stateName);
+        List<string> GetStateShortener(string stateShortName);
     }
 }

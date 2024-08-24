@@ -7,13 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\BLL\LauriesEC.Fences.Services\LauriesEC.Fences.Services.csproj" />
+    <ProjectReference Include="..\..\BLL\LauriesEC.Gate.Services\LauriesEC.Gate.Services.csproj" />
     <ProjectReference Include="..\..\BLL\LauriesEC.Service.Calculator\LauriesEC.Service.Calculator.csproj" />
     <ProjectReference Include="..\..\DAL\LauriesEC.Fence.Repositories\LauriesEC.Fences.Repositories.csproj" />
+    <ProjectReference Include="..\..\Security\Security.csproj" />
   </ItemGroup>
 
 </Project>

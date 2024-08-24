@@ -9,7 +9,8 @@
       "LauriesEC.Service.Calculator/1.0.0": {
         "dependencies": {
           "LauriesEC.Fences.Repositories": "1.0.0",
-          "LauriesEC.Fences.Services": "1.0.0"
+          "LauriesEC.Fences.Services": "1.0.0",
+          "LauriesEC.Gate.Services": "1.0.0"
         },
         "runtime": {
           "LauriesEC.Service.Calculator.dll": {}
@@ -448,6 +449,11 @@
         "runtime": {
           "LauriesEC.Fences.Services.dll": {}
         }
+      },
+      "LauriesEC.Gate.Services/1.0.0": {
+        "runtime": {
+          "LauriesEC.Gate.Services.dll": {}
+        }
       }
     }
   },
@@ -750,6 +756,11 @@
       "sha512": ""
     },
     "LauriesEC.Fences.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LauriesEC.Gate.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

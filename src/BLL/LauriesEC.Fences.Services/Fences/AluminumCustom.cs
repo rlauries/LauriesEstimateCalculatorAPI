@@ -12,34 +12,47 @@ namespace LauriesEC.Fences.Services.Fences
     {
         public int SqFeet { get; set; }
         public int PostQty { get; set; }
-        public int PostId { get; set; } = 14;
+        
+        const int SqPost4x1 = 12;
+        const int SqPost2x1 = 13;
+        const int SqPost2x2 = 14;
+
 
         public int TubeWidth { get; set; }
         public int TubeWidthId { get; set; } = 0;
         public int Gap {  get; set; }
 
         public int HorizontalTubeQty { get; set; }
-        public Dictionary<int, int> MaterialList { get; set; }
+        public Dictionary<int, int> MaterialList { get; set; } = null;
 
 
         public AluminumCustom(int sqFeet, int tubeWidth, int gap)
         {
             TubeWidthId = (tubeWidth == 4) 
-                ? (TubeWidthId = 12) 
-                : (TubeWidthId = 13);
+                ? (TubeWidthId = SqPost4x1) 
+                : (TubeWidthId = SqPost2x1);
             SqFeet = sqFeet;
             TubeWidth = tubeWidth;
             Gap = gap;
             GetMaterialList();
         }
+
+        //this dictionary contain Material Type and the quatity base on sqFeet
         public Dictionary<int, int> GetMaterialList()
         {
+            if(SqFeet == 0)
+               return new Dictionary<int, int>();
+                
+            
             MaterialList = new Dictionary<int, int>()
             {
-                {14, (SqFeet / 4 + 1) },
+                {SqPost2x2, (SqFeet / 4 + 1) },
                 {TubeWidthId, (SqFeet/24) * (68 / (TubeWidth + Gap) + 1) }
             };
-            return MaterialList; 
+            return MaterialList;
+            
+
+            
         }
     }
 }

@@ -9,6 +9,6 @@ namespace LauriesEC.Fences.Services.Fences
         public int HorizontalTubes { get; set; }
         public int TubeWidth { get; set; }
         public int Gap { get; set; }
-        public string? StateName { get; set; }
+        
     }
 }

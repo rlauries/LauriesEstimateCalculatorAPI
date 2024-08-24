@@ -10,6 +10,9 @@ namespace LauriesEC.Service.Calculator.Interfaces
     public interface IPriceByService
     {
         decimal PriceByServiceWithoutTax(FenceModelFromTheBody viewFence);
-        InvoiceModel MyInvoice(FenceModelFromTheBody viewFence, InvoiceModel invoice);
+        decimal TaxRateByStateName(string stateName);
+        List<string> GetStateShortener(string stateShortName);
+        InvoiceModel MyInvoice(FenceModelFromTheBody viewFence, string stateName, InvoiceModel invoice);
+        decimal PricePerStandarGate();
     }
 }
