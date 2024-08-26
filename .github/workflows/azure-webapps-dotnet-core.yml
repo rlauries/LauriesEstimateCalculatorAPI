@@ -43,15 +43,7 @@ jobs:
       - name: Publish
         run: dotnet publish ./LauriesEstimateCalculatorAPI.sln --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
 
-      # Add a step to list the contents of the publish directory
-      - name: List publish directory contents
-        run: ls -la ./LauriesEstimateCalculatorAPI/src/ApiWebL/LauriesEC.Fences/bin/Release/net6.0/publish
-
-      - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v3
-        with:
-          name: .net-app
-          path: ./LauriesEstimateCalculatorAPI/src/ApiWebL/LauriesEC.Fences/bin/Release/net6.0/publish
+    
 
   deploy:
     permissions:
