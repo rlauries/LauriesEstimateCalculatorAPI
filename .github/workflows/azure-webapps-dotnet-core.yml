@@ -19,8 +19,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      
+      # Checkout the code
       - uses: actions/checkout@v4
-
+      
+      # Set up .NET Core
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v4
         with:
@@ -28,7 +31,8 @@ jobs:
       
       - name: Build
         run: dotnet build ./LauriesEstimateCalculatorAPI.sln
-      
+
+      # Set up dependency caching for faster builds
       - name: Set up dependency caching for faster builds
         uses: actions/cache@v3
         with:
@@ -36,13 +40,25 @@ jobs:
           key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
           restore-keys: |
             ${{ runner.os }}-nuget-
-            
+
+      # Build the project      
       - name: Build
         run: dotnet build ./LauriesEstimateCalculatorAPI.sln --configuration Release --no-restore
 
+      # Publish the project
       - name: Publish
         run: dotnet publish ./LauriesEstimateCalculatorAPI.sln --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
-   
+      
+      # Verify the publish folder exists and contains the correct files
+      - name: List published files
+        run: ls -R ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+
+      # Upload the artifact for the deployment job
+      - name: Upload artifact for deployment job
+        uses: actions/upload-artifact@v3
+        with:
+          name: .net-app
+          path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
   deploy:
     permissions:
       contents: none
@@ -59,11 +75,13 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
       
+      # Download the build artifact
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
           name: .net-app
-      
+
+      # Deploy to Azure Web App
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
