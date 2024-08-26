@@ -38,13 +38,17 @@ jobs:
         run: dotnet build ./LauriesEstimateCalculatorAPI.sln --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish ./LauriesEstimateCalculatorAPI.sln -c Release -o ./LauriesEstimateCalculatorAPI/src/ApiWebL/LauriesEC.Fences/bin/Release/net6.0/publish  # Ensure that the publish folder is created in the specified path
+        run: dotnet publish ./LauriesEstimateCalculatorAPI.sln -c Release -o ./LauriesEstimateCalculatorAPI/src/ApiWebL/LauriesEC.Fences/bin/Release/net6.0/publish
+
+      # Add a step to list the contents of the publish directory
+      - name: List publish directory contents
+        run: ls -la ./LauriesEstimateCalculatorAPI/src/ApiWebL/LauriesEC.Fences/bin/Release/net6.0/publish
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
           name: .net-app
-          path: ./LauriesEstimateCalculatorAPI/src/ApiWebL/LauriesEC.Fences/bin/Release/net6.0/publish  # Updated artifact path
+          path: ./LauriesEstimateCalculatorAPI/src/ApiWebL/LauriesEC.Fences/bin/Release/net6.0/publish
 
   deploy:
     permissions:
