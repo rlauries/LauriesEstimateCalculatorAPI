@@ -25,7 +25,10 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
-          
+      
+      - name: Build
+        run: dotnet build ./LauriesEstimateCalculatorAPI.sln
+      
       - name: Set up dependency caching for faster builds
         uses: actions/cache@v3
         with:
