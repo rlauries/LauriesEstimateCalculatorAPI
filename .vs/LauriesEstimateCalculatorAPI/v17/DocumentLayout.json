@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\apiwebl\\lauriesec.fences\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|solutionrelative:src\\apiwebl\\lauriesec.fences\\controller\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\apiwebl\\lauriesec.fences\\models\\signupmodelfrombody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|solutionrelative:src\\apiwebl\\lauriesec.fences\\models\\signupmodelfrombody.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{045E6154-7B55-4BAE-8A74-3B687E886B6A}|src\\Security\\Security.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\security\\services\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{045E6154-7B55-4BAE-8A74-3B687E886B6A}|src\\Security\\Security.csproj|solutionrelative:src\\security\\services\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -22,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 484,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -87,43 +74,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:6:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SignUpModelFromBody.cs",
-              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Models\\SignUpModelFromBody.cs",
-              "RelativeDocumentMoniker": "src\\ApiWebL\\LauriesEC.Fences\\Models\\SignUpModelFromBody.cs",
-              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Models\\SignUpModelFromBody.cs",
-              "RelativeToolTip": "src\\ApiWebL\\LauriesEC.Fences\\Models\\SignUpModelFromBody.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T21:39:14.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Controller\\UserController.cs",
-              "RelativeDocumentMoniker": "src\\ApiWebL\\LauriesEC.Fences\\Controller\\UserController.cs",
-              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Controller\\UserController.cs",
-              "RelativeToolTip": "src\\ApiWebL\\LauriesEC.Fences\\Controller\\UserController.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAwwBsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T16:40:30.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\Security\\Services\\Login.cs",
-              "RelativeDocumentMoniker": "src\\Security\\Services\\Login.cs",
-              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\Security\\Services\\Login.cs",
-              "RelativeToolTip": "src\\Security\\Services\\Login.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAwwB4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T18:20:59.012Z"
             }
           ]
         },
