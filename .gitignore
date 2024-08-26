@@ -13,3 +13,13 @@
 /src/DAL/LauriesEC.Fence.Repositories/obj
 /LauriesEstimateCalculatorAPI.Test/bin/Debug/net6.0
 /src/DAL/LauriesEC.Fence.Repositories/bin/Debug/net6.0
+LauriesEstimateCalculatorAPI.Test/bin/
+src/ApiWebL/LauriesEC.Fences/bin/Release/
+src/BLL/LauriesEC.Fences.Services/bin/Release/
+src/BLL/LauriesEC.Gate.Services/bin/Release/
+src/BLL/LauriesEC.Gate.Services/obj/Release/
+src/BLL/LauriesEC.Service.Calculator/bin/Release/
+src/BLL/LauriesEC.Service.Calculator/obj/Release/
+src/DAL/LauriesEC.Fence.Repositories/bin/
+src/Security/bin/Release/
+src/Security/obj/Release/
