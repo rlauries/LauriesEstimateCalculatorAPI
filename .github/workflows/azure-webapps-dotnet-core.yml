@@ -2,7 +2,7 @@ name: Build and deploy ASP.Net Core app to an Azure Web App
 
 env:
   AZURE_WEBAPP_NAME: LauriesEstimateCalculatorAPI    # set this to the name of your Azure Web App
-  AZURE_WEBAPP_PACKAGE_PATH: './LauriesEstimateCalculatorAPI/src/ApiWebL/LauriesEC.Fences/bin/Release/net6.0/publish'  # Updated package path to point to the publish folder
+  AZURE_WEBAPP_PACKAGE_PATH: "./publish"  # Updated package path to point to the publish folder
   DOTNET_VERSION: '6'                 # set this to the .NET Core version to use
   AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}  # Add this line to set Azure credentials
 
@@ -26,6 +26,9 @@ jobs:
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
+      - name: Build
+        run: dotnet restore ./LauriesEstimateCalculatorAPI.sln
+
       - name: Set up dependency caching for faster builds
         uses: actions/cache@v3
         with:
@@ -34,11 +37,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nuget-
 
-      - name: Build with dotnet
-        run: dotnet build ./LauriesEstimateCalculatorAPI.sln --configuration Release
+      - name: Build
+        run: dotnet build ./LauriesEstimateCalculatorAPI.sln --configuration Release --no-restore
 
-      - name: dotnet publish
-        run: dotnet publish ./LauriesEstimateCalculatorAPI.sln -c Release -o ./LauriesEstimateCalculatorAPI/src/ApiWebL/LauriesEC.Fences/bin/Release/net6.0/publish
+      - name: Publish
+        run: dotnet publish ./LauriesEstimateCalculatorAPI.sln --configuration Release --no-build --output '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}'
 
       # Add a step to list the contents of the publish directory
       - name: List publish directory contents
@@ -76,5 +79,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          publish-profile: ${{ secrets.AZURE_CREDENTIALS }}
+          package: "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
+          
