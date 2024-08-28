@@ -11,16 +11,28 @@ namespace LauriesEC.Fences.Repositories.DatabaseContext
 {
     public class LauriesContext : DbContext
     {
+        
 
-        SqlConnection connection = new SqlConnection("Data Source=JEVISPC\\MSSQLSERVERLOCAL; Initial Catalog = Lauries; Integrated security=true");
+        SqlConnection connection = new SqlConnection("Server=tcp:lauries-estimate-calculator-db-server.database.windows.net,1433;" +
+                                      "Initial Catalog=lauries-estimate-calculator-db;" +
+                                      "Persist Security Info=False;" +
+                                      "User ID=lauries-estimate-calculator-db;" +  // Replace with your username
+                                      "Password=Estadosunidos#01;" +  // Replace with your password
+                                      "MultipleActiveResultSets=False;" +
+                                      "Encrypt=True;" +
+                                      "TrustServerCertificate=False;" +
+                                      "Connection Timeout=30;"); 
         public LauriesContext(DbContextOptions<LauriesContext> options)
             : base(options)
         {
+            
         }
         public LauriesContext()
         {
-
+            
         }
+   
+
 
         public MaterialsModel ProcessMaterials(int Id, string Name, decimal Price, int MaterialType)
         {
