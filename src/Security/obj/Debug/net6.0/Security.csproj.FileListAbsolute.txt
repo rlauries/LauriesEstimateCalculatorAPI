@@ -11,6 +11,6 @@ C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\Security\
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\Security\obj\Debug\net6.0\refint\Security.dll
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\Security\obj\Debug\net6.0\Security.pdb
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\Security\obj\Debug\net6.0\ref\Security.dll
-C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\Security\obj\Debug\net6.0\Security.csproj.CopyComplete
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\Security\bin\Debug\net6.0\LauriesEC.Fences.Repositories.dll
 C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\Security\bin\Debug\net6.0\LauriesEC.Fences.Repositories.pdb
+C:\Users\rlaur\OneDrive\Desktop\repos\LauriesEstimateCalculatorAPI\src\Security\obj\Debug\net6.0\Security.csproj.Up2Date

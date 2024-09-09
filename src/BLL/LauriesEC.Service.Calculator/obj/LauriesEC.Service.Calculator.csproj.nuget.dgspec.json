@@ -28,7 +28,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\DAL\\LauriesEC.Fence.Repositories\\LauriesEC.Fences.Repositories.csproj": {
+                "projectPath": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\DAL\\LauriesEC.Fence.Repositories\\LauriesEC.Fences.Repositories.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -177,6 +181,24 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2024.7.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

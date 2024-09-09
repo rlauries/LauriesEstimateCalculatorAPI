@@ -14,7 +14,7 @@ namespace LauriesEC.Fence.Controller
     public class PriceByServiceController : ControllerBase
     {
 
-        IPriceByService _priceByService;
+        public IPriceByService _priceByService;
 
         public PriceByServiceController(IPriceByService priceByServices)
         {
@@ -24,7 +24,7 @@ namespace LauriesEC.Fence.Controller
         [HttpPost("PanelPrice")]
         public ActionResult<decimal> GetPriceByService([FromBody] FenceModelFromTheBody viewFence)
         {
-            var totalPrice = _priceByService.PriceByServiceWithoutTax(viewFence);
+            var totalPrice = _priceByService.PriceByFenceWithoutTax(viewFence);
 
             return Ok(totalPrice);
         }
@@ -41,12 +41,12 @@ namespace LauriesEC.Fence.Controller
             return Ok(nameList);
         }
 
-        [HttpPost("Invoice")]
-        public ActionResult<InvoiceModel> GetInvoice([FromBody] FenceModelFromTheBody viewFence, string stateName)
-        { 
-            InvoiceModel invoice = new InvoiceModel();
-            invoice = _priceByService.MyInvoice(viewFence, stateName, invoice);
-            return Ok(invoice);
-        }
+        //[HttpPost("Invoice")]
+        //public ActionResult<InvoiceModel> GetInvoice([FromBody] FenceModelFromTheBody viewFence, string stateName)
+        //{ 
+        //    InvoiceModel invoice = new InvoiceModel();
+        //    invoice = _priceByService.MyInvoice(viewFence, stateName, invoice);
+        //    return Ok(invoice);
+        //}
     }
 }

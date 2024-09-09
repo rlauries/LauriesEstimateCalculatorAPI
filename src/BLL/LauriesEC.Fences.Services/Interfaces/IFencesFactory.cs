@@ -1,4 +1,5 @@
 ﻿using LauriesEC.Fence;
+using LauriesEC.Fences.Repositories.Interfaces;
 using LauriesEC.Fences.Services.Fences;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,9 @@ namespace LauriesEC.Fences.Services.Interfaces
     public interface IFencesFactory
     {
         //int GetSqFeet();
-        IFence GetFencePaperList();
-        
+
+        IFence GetFencePaperList(FenceModelFromTheBody viewFence, ISupplier supplier);
+
+
     }
 }

@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 using LauriesEC.Fence.Models;
-using LauriesEC.Fence.ExtensionClass;
+
 using LauriesEC.Fences.Repositories.DatabaseContext;
 using LauriesEC.Fences.Repositories.DataModels;
+using LauriesEC.Fences.Repositories.Interfaces;
+using LauriesEC.Fences.Repositories;
 
 
 namespace LauriesEC.Fence.Controller
@@ -20,12 +22,13 @@ namespace LauriesEC.Fence.Controller
     {
         public IFencesFactory _fencesServices;
         public LauriesContext _lauriesContext;
-        
+        public ISupplier _supplier;
 
-        public FenceController(IFencesFactory fence) 
+        public FenceController(IFencesFactory fence, ISupplier supplier) 
         {
             _fencesServices = fence;
             _lauriesContext = new LauriesContext();
+            _supplier = supplier;
         }
 
        
@@ -33,7 +36,7 @@ namespace LauriesEC.Fence.Controller
         [HttpPost("paperList")]
         public ActionResult<IFence> GetFencesPaperListInController([FromBody] FenceModelFromTheBody viewFence)
         {
-               var f = _fencesServices.PrintFenceCard(viewFence);
+               var f = _fencesServices.GetFencePaperList(viewFence, _supplier);
 
             return Ok(f);
         }
