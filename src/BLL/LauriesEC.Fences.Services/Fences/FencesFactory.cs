@@ -1,4 +1,5 @@
-﻿using LauriesEC.Fences.Services;
+﻿using LauriesEC.Fences.Repositories.Interfaces;
+using LauriesEC.Fences.Services;
 using LauriesEC.Fences.Services.Fences;
 using LauriesEC.Fences.Services.Interfaces;
 
@@ -14,36 +15,35 @@ namespace LauriesEC.Fence
     }
     public class FencesFactory : IFencesFactory
     {
-        public IFence fence { get; set; }
+        public IFence Fence { get; set; }
+         
        
-
-
         public FencesFactory() { }
         
-        public FencesFactory(int sqFeet)
-        {
-            fence = new ChainLink(sqFeet);
-        }
-
-        public FencesFactory(int sqFeet, int horizontalTubing)
-        {
-            fence = new DuraFence(sqFeet, horizontalTubing);
-        }
-        public FencesFactory(int sqFeet, int tubeWide, int gap)
-        {
-            fence = new AluminumCustom(sqFeet, tubeWide, gap); 
+        //public FencesFactory(FenceModelFromTheBody viewFence, ISupplier supplier)
+        //{
             
-        }
-        
-        
-        public IFence GetFencePaperList()
+
+        //   GetFencePaperList(viewFence, supplier);
+            
+        //}
+        public IFence GetFencePaperList(FenceModelFromTheBody viewFence, ISupplier supplier)
         {
-
-            return fence;
-
+            if (viewFence.TypeOfFence == FenceType.ChainLink)
+            {
+                Fence = new ChainLink(viewFence.SqFeet, supplier);
+            }
+            else if (viewFence.TypeOfFence == FenceType.DuraFence)
+            {
+                Fence = new DuraFence(viewFence.SqFeet, viewFence.HorizontalTubes, supplier);
+            }
+            else if (viewFence.TypeOfFence == FenceType.AluminioCustom)
+            {
+                Fence = new AluminumCustom(viewFence.SqFeet, viewFence.TubeWidth, viewFence.Gap, supplier);
+            }
+            var f = Fence;
+            return f; 
         }
-
-        
 
     }
 }

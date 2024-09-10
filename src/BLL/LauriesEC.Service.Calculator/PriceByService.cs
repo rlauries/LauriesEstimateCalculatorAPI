@@ -3,7 +3,7 @@ using LauriesEC.Fences.Repositories.Interfaces;
 using LauriesEC.Fences.Services.Fences;
 using LauriesEC.Fences.Services.Interfaces;
 using LauriesEC.Service.Calculator.Interfaces;
-using LauriesEC.Fence.ExtensionClass;
+
 using LauriesEC.Fences.Repositories;
 using LauriesEC.Gate.Services.Interfaces;
 
@@ -11,15 +11,15 @@ namespace LauriesEC.Service.Calculator
 {
     public class PriceByService : IPriceByService
     {
-        public IFencesFactory _fencesServices;
+        public IFencesFactory _fencesFactory;
         public ISupplier _materials;
         public IStateTaxRate _taxRate;
         public IGateFactory _gateFactory;
         
 
-        public PriceByService(IFencesFactory fences, ISupplier supplier, IStateTaxRate stateTaxRate, IGateFactory gateFactory)
+        public PriceByService(IFencesFactory fencesFactory, ISupplier supplier, IStateTaxRate stateTaxRate, IGateFactory gateFactory)
         {
-            _fencesServices = fences;
+            _fencesFactory = fencesFactory;
             _materials = supplier;
             _taxRate = stateTaxRate;
             _gateFactory = gateFactory;
@@ -29,19 +29,27 @@ namespace LauriesEC.Service.Calculator
             
         }
 
-        public decimal PriceByServiceWithoutTax(FenceModelFromTheBody viewFence)
+        public decimal PriceByFenceWithoutTax(FenceModelFromTheBody viewFence)
         {
+            
             decimal subTotal = 0;
-            var fenceCard = _fencesServices;
-            var materialList = fenceCard.PrintFenceCard(viewFence).GetMaterialList();
+
+
+
+            var fence = _fencesFactory.GetFencePaperList(viewFence, _materials);
+            var materialList = fence.GetMaterialList();
             foreach (var item in materialList)
-            {
-                subTotal += PriceQuantityWithMaterialId(item.Key, item.Value);
+            { 
+                subTotal += item.Price * item.quantityBySqFeet;
 
             }
             return subTotal; 
         }
+        public IFence GetFencePaperListWithoutTax(FenceModelFromTheBody viewFence)
+        {
 
+            return _fencesFactory.GetFencePaperList(viewFence, _materials); 
+        }
 
 
         public decimal PricePerStandarGate()
@@ -77,13 +85,13 @@ namespace LauriesEC.Service.Calculator
             return quantity * price;
             
         }
-        public InvoiceModel MyInvoice(FenceModelFromTheBody viewFence, string stateName, InvoiceModel invoice)
+        public Invoice MyInvoice(FenceModelFromTheBody viewFence, string stateName, Invoice invoice)
         {
 
-            invoice.FenceCard = _fencesServices.PrintFenceCard(viewFence);
-            invoice.PriceWithoutTax = PriceByServiceWithoutTax(viewFence);   
-            invoice.TaxRate = invoice.PriceWithoutTax * TaxRateByStateName(stateName) / 100;
-            invoice.Total = invoice.PriceWithoutTax + invoice.TaxRate;
+            //invoice.FenceCard = _fencesServices.PrintFenceCard(viewFence);
+            //invoice.PriceWithoutTax = PriceByServiceWithoutTax(viewFence);   
+            //invoice.TaxRate = invoice.PriceWithoutTax * TaxRateByStateName(stateName) / 100;
+            //invoice.Total = invoice.PriceWithoutTax + invoice.TaxRate;
             return invoice;
         }
 

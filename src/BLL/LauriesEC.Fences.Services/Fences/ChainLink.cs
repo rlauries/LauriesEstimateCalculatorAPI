@@ -1,7 +1,10 @@
 ﻿
+using LauriesEC.Fences.Repositories.DataModels;
+using LauriesEC.Fences.Repositories.Interfaces;
 using LauriesEC.Fences.Services.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,14 +17,17 @@ namespace LauriesEC.Fences.Services.Fences
         const int TopRail3_8 = 9;
         const int Maya = 7;
         const int EyesTop = 10;
+
+
         public int SqFeet { get; set; } = 0;
+        public List<MaterialsModel> MaterialList { get; set; } = new List<MaterialsModel>();
+        public ISupplier supplier;
 
-        public Dictionary<int, int> MaterialList { get; set; } = null;
-
-        public ChainLink(int sqFeet)
+        public ChainLink(int sqFeet, ISupplier supplier)
         {
             SqFeet = sqFeet;
-            GetMaterialList();
+            this.supplier = supplier;
+            SetMaterialList();
         }
         public ChainLink()
         {
@@ -30,23 +36,23 @@ namespace LauriesEC.Fences.Services.Fences
 
     
 
-        public Dictionary<int,int> GetMaterialList()
+        public void SetMaterialList()
         {
-            if (SqFeet == 0) {
-                return new Dictionary<int, int>();
-            } 
+            MaterialList.Add(supplier.GetMaterialById(T2x2));
+            MaterialList[0].quantityBySqFeet = (SqFeet / 4 + 1);
+            MaterialList.Add(supplier.GetMaterialById(TopRail3_8));
+            MaterialList[1].quantityBySqFeet = (SqFeet / 21 + 1);
+            MaterialList.Add(supplier.GetMaterialById(Maya));
+            MaterialList[2].quantityBySqFeet = (SqFeet / 50 + 1);
+            MaterialList.Add(supplier.GetMaterialById(EyesTop));
+            MaterialList[3].quantityBySqFeet = (SqFeet / 4 + 1);
 
-            //this dictionary contain Material Type and the quatity base on sqFeet
-            MaterialList = new Dictionary<int, int>()
-            {
-                {T2x2, (SqFeet / 4 + 1) },
-                {TopRail3_8, (SqFeet / 21 + 1)},
-                {Maya, (SqFeet / 50 + 1)},
-                {EyesTop, (SqFeet / 4 + 1)}
-            };
+        }
+        public List<MaterialsModel> GetMaterialList()
+        {
             return MaterialList;
         }
-        
+
 
     }
 }

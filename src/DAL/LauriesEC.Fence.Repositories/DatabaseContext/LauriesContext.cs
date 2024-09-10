@@ -16,8 +16,8 @@ namespace LauriesEC.Fences.Repositories.DatabaseContext
         SqlConnection connection = new SqlConnection("Server=tcp:lauries-estimate-calculator-db-server.database.windows.net,1433;" +
                                       "Initial Catalog=lauries-estimate-calculator-db;" +
                                       "Persist Security Info=False;" +
-                                      "User ID=lauries-estimate-calculator-db;" +  // Replace with your username
-                                      "Password=Estadosunidos#01;" +  // Replace with your password
+                                      "User ID=lauries-estimate-calculator-db;" + 
+                                      "Password=Estadosunidos#01;" +
                                       "MultipleActiveResultSets=False;" +
                                       "Encrypt=True;" +
                                       "TrustServerCertificate=False;" +
@@ -300,7 +300,7 @@ namespace LauriesEC.Fences.Repositories.DatabaseContext
                     {
                         Id = Convert.ToInt32(dr["Id"]),
                         Name = Convert.ToString(dr["Name"]),
-                        LastName = Convert.ToString(dr["LastName"]),
+                        CompanyName = Convert.ToString(dr["CompanyName"]),
                         Email = Convert.ToString(dr["Email"]),
                         PhoneNumber = Convert.ToString(dr["PhoneNumber"]),
                         Address = Convert.ToString(dr["Address"]),
@@ -336,7 +336,7 @@ namespace LauriesEC.Fences.Repositories.DatabaseContext
                 //command.Parameters.AddRange(parameters);
                 command.Parameters.Add("@Id", System.Data.SqlDbType.Int).Value = id;
                 command.Parameters.Add("@Name", System.Data.SqlDbType.VarChar).Value = name;
-                command.Parameters.Add("@LastName", System.Data.SqlDbType.VarChar).Value = lastName;
+                command.Parameters.Add("@CompanyName", System.Data.SqlDbType.VarChar).Value = lastName;
                 command.Parameters.Add("@Email", System.Data.SqlDbType.VarChar).Value = email;
                 command.Parameters.Add("@PhoneNumber", System.Data.SqlDbType.VarChar).Value = phoneNumber;
                 command.Parameters.Add("@Address", System.Data.SqlDbType.VarChar).Value = address;
@@ -355,7 +355,7 @@ namespace LauriesEC.Fences.Repositories.DatabaseContext
                     {
                         Id = Convert.ToInt32(dr["Id"]),
                         Name = Convert.ToString(dr["Name"]),
-                        LastName = Convert.ToString(dr["LastName"]),
+                        CompanyName = Convert.ToString(dr["CompanyName"]),
                         Email = Convert.ToString(dr["Email"]),
                         PhoneNumber = Convert.ToString(dr["PhoneNumber"]),
                         Address = Convert.ToString(dr["Address"]),
@@ -426,6 +426,7 @@ namespace LauriesEC.Fences.Repositories.DatabaseContext
             
         }
 
+        //-----------------------------------------------------------------------------------
         public LoginModel GetPasswordAndSaltByUserName(string userName)
         {
             LoginModel userModel = new LoginModel();

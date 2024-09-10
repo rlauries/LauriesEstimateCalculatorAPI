@@ -29,7 +29,7 @@ namespace LauriesEC.Fence.Controller
             CustomerModel customer = _customerContext.ProcessCustomer(
                 modelFromBody.Id,
                 modelFromBody.Name,
-                modelFromBody.LastName,
+                modelFromBody.CompanyName,
                 modelFromBody.Email,
                 modelFromBody.PhoneNumber,
                 modelFromBody.Address,

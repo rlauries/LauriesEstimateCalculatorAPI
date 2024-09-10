@@ -46,6 +46,7 @@ builder.Services.AddScoped<IPriceByService,  PriceByService>();
 builder.Services.AddScoped<IStateTaxRate, USATaxRate>();
 builder.Services.AddScoped<IGateFactory, GateFactory>();
 builder.Services.AddScoped<ILogin, Login>();
+builder.Services.AddScoped<IInvoice, Invoice>();
 
 
 
