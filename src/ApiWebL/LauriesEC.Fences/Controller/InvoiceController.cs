@@ -26,11 +26,11 @@ namespace LauriesEC.Fence.Controller
             QuestPDF.Settings.License = LicenseType.Community;
         }
         [HttpPost("download")]
-        public IActionResult DownloadPdf(FenceModelFromTheBody viewFence)
+        public IActionResult DownloadPdf(FenceModelFromTheBody viewFence,string stateName, int numberOfDoors)
         {
             var imagePath = Path.Combine(_host.WebRootPath, "images/LogoWallpapers2.jpg");
             byte[] imageData = System.IO.File.ReadAllBytes(imagePath);
-            var pdfData = _invoice.DownloadPdf(imageData, viewFence);
+            var pdfData = _invoice.DownloadPdf(imageData, viewFence, stateName, numberOfDoors);
             
             return File(pdfData, "application/pdf", "quote.pdf"); // Use the File method to return the PDF
         }

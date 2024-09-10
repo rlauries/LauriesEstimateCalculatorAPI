@@ -31,7 +31,7 @@ namespace LauriesEC.Service.Calculator
             
 
         }
-        public byte[] DownloadPdf(byte[] imageData, FenceModelFromTheBody viewFence)
+        public byte[] DownloadPdf(byte[] imageData, FenceModelFromTheBody viewFence, string stateName, int numberOfDoors)
         {
 
             
@@ -99,9 +99,16 @@ namespace LauriesEC.Service.Calculator
 
                         colContent.Item().PaddingVertical(25).LineHorizontal(0.5f);
 
-                        //--------------Table-------------------------------------
-                        decimal total = 0;
-                        
+                        decimal panelTotal = 0;
+                        decimal subtotal = 0;
+                        var fence = _priceByService.GetFencePaperListWithoutTax(viewFence);
+                        var standardGatePrice = _priceByService.PricePerStandarGate();
+                        decimal gateTotal = standardGatePrice * numberOfDoors;
+                        var taxByStateName = _priceByService.TaxRateByStateName(stateName);
+
+                        var item = fence.GetMaterialList();
+                        //--------------Panel Table-------------------------------------
+
                         colContent.Item().Table(table => {
                             table.ColumnsDefinition(columns => {
                                 columns.RelativeColumn(2);
@@ -111,7 +118,7 @@ namespace LauriesEC.Service.Calculator
                                 columns.RelativeColumn();
                             });
                             table.Header(header => {
-                                header.Cell().Background("#0b0c5c").Padding(2).Text("Product").FontColor(Colors.White);
+                                header.Cell().Background("#0b0c5c").Padding(2).Text($"Product: {viewFence.SqFeet} Sq/Feet").FontColor(Colors.White);
                                 header.Cell().Background("#0b0c5c").Padding(2).AlignCenter().Text("Quantity").FontColor(Colors.White);
                                 header.Cell().Background("#0b0c5c").Padding(2).AlignCenter().Text("Price").FontColor(Colors.White);
                                 header.Cell().Background("#0b0c5c").Padding(2).AlignCenter().Text("Material").FontColor(Colors.White);
@@ -120,11 +127,9 @@ namespace LauriesEC.Service.Calculator
 
                             });
 
-                            //------------Fill the table with random values-------------------
+                            //------------Fill Panel the table -------------------
                             
-                            var fence = _priceByService.GetFencePaperListWithoutTax(viewFence);
-
-                            var item = fence.GetMaterialList();
+                            
                             
                             for(int i = 0; i < item.Count; i++ )
                             {
@@ -143,16 +148,74 @@ namespace LauriesEC.Service.Calculator
                                 table.Cell().BorderBottom(0.5f).BorderColor("#0b0c5c")
                                      .Padding(2).AlignRight().Text($"$ {quantity * price}").FontSize(10);
 
-                                total += quantity * price;
+                                panelTotal += quantity * price;
                             }
 
 
                         });
+
+                        // ----------End Panel Table -------------------------------
+
+                        //---Blank row--------------------------------
                         colContent.Item().AlignRight().Row(row => {
-                            row.ConstantItem(40).Border(1)
-                               .Background("#0b0c5c").Text("Total").Bold().AlignCenter().FontColor(Colors.White);
-                            row.ConstantItem(50).Border(1)
-                               .Text($"$ {total}").AlignRight();
+                            row.RelativeItem().Text("");
+                        });
+                        //---End of Blank row--------------------------------
+
+                        //------------Gate Table -------------------
+                        colContent.Item().Table(gateTable => {
+                            gateTable.ColumnsDefinition(columns => {
+                                columns.RelativeColumn(2);
+                                columns.RelativeColumn();
+                                columns.RelativeColumn();
+                                columns.RelativeColumn();
+                            });
+                            gateTable.Header(header => {
+                                header.Cell().Background("#0b0c5c").Padding(2).Text("Product").FontColor(Colors.White);
+                                header.Cell().Background("#0b0c5c").Padding(2).AlignCenter().Text("Quantity").FontColor(Colors.White);
+                                header.Cell().Background("#0b0c5c").Padding(2).AlignCenter().Text("Price").FontColor(Colors.White);
+                                header.Cell().Background("#0b0c5c").Padding(2).AlignRight().Text("Total").FontColor(Colors.White);
+
+
+                            });
+
+                            colContent.Item().AlignRight().Row(row => {
+                                row.RelativeItem(2).BorderBottom(0.5f).Padding(2).Text("Gates");
+                                row.RelativeItem().BorderBottom(0.5f).AlignCenter().Text(numberOfDoors.ToString());
+                                row.RelativeItem().BorderBottom(0.5f).AlignCenter().Text(standardGatePrice.ToString());
+                                row.RelativeItem().BorderBottom(0.5f).AlignRight().Text($"{gateTotal}");
+
+                            });
+                        });
+                        //-------------end Gate Table ----------------------------------
+
+                        //---Blank row--------------------------------
+                        colContent.Item().AlignRight().Row(row => {
+                            row.RelativeItem().Text("");
+                        });
+                        //---End of Blank row--------------------------------
+
+                        subtotal = panelTotal + gateTotal;
+                        
+                        colContent.Item().AlignRight().Row(row => {
+                            row.ConstantItem(150).BorderBottom(0.2f)
+                               .Background("#0b0c5c").Text("Subtotal").FontSize(14).Bold().AlignCenter().FontColor(Colors.White);
+                            row.ConstantItem(120).BorderBottom(0.2f).BorderTop(0.2f)
+                               .Text($"$ {subtotal}").FontSize(12).AlignRight();
+
+                        });
+                        colContent.Item().AlignRight().Row(row => {
+                            row.ConstantItem(150).BorderBottom(0.2f)
+                               .Background("#0b0c5c").Text("Tax").FontSize(14).Bold().AlignCenter().FontColor(Colors.White);
+                            row.ConstantItem(120).BorderBottom(0.2f)
+                               .Text($"$ {taxByStateName}").FontSize(12).AlignRight();
+
+                        });
+                        colContent.Item().AlignRight().Row(row => {
+                            row.ConstantItem(150).BorderBottom(0.2f)
+                               .Background("#0b0c5c").Text("Total").FontSize(14).Bold().AlignCenter().FontColor(Colors.White);
+                            row.ConstantItem(120).BorderBottom(0.2f)
+                               .Text($"$ {subtotal + (subtotal * taxByStateName / 100 )}").FontSize(12).AlignRight();
 
                         });
 

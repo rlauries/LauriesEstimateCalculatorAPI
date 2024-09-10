@@ -9,6 +9,6 @@ namespace LauriesEC.Service.Calculator.Interfaces
 {
     public interface IInvoice
     {
-        byte[] DownloadPdf(byte[] imageData, FenceModelFromTheBody viewFence);
+        byte[] DownloadPdf(byte[] imageData, FenceModelFromTheBody viewFence, string stateName, int numberOfDoors);
     }
 }

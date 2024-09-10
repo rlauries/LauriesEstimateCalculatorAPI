@@ -7,24 +7,20 @@
       "RelativeMoniker": "D:0:0:{92D0E986-8DE6-460F-94E2-CAA3D22C59FA}|src\\BLL\\LauriesEC.Service.Calculator\\LauriesEC.Service.Calculator.csproj|solutionrelative:src\\bll\\lauriesec.service.calculator\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\apiwebl\\lauriesec.fences\\controller\\gatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|solutionrelative:src\\apiwebl\\lauriesec.fences\\controller\\gatescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\apiwebl\\lauriesec.fences\\controller\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|solutionrelative:src\\apiwebl\\lauriesec.fences\\controller\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\apiwebl\\lauriesec.fences\\controller\\fencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68FD4B89-54D5-45D3-B8C2-5D81A38DB475}|src\\ApiWebL\\LauriesEC.Fences\\LauriesEC.Fence.csproj|solutionrelative:src\\apiwebl\\lauriesec.fences\\controller\\fencecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18D21DB1-8870-40B6-B399-073285D03536}|src\\BLL\\LauriesEC.Fences.Services\\LauriesEC.Fences.Services.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\bll\\lauriesec.fences.services\\fences\\fencesfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18D21DB1-8870-40B6-B399-073285D03536}|src\\BLL\\LauriesEC.Fences.Services\\LauriesEC.Fences.Services.csproj|solutionrelative:src\\bll\\lauriesec.fences.services\\fences\\fencesfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{92D0E986-8DE6-460F-94E2-CAA3D22C59FA}|src\\BLL\\LauriesEC.Service.Calculator\\LauriesEC.Service.Calculator.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\bll\\lauriesec.service.calculator\\interfaces\\iinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92D0E986-8DE6-460F-94E2-CAA3D22C59FA}|src\\BLL\\LauriesEC.Service.Calculator\\LauriesEC.Service.Calculator.csproj|solutionrelative:src\\bll\\lauriesec.service.calculator\\interfaces\\iinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{92D0E986-8DE6-460F-94E2-CAA3D22C59FA}|src\\BLL\\LauriesEC.Service.Calculator\\LauriesEC.Service.Calculator.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\bll\\lauriesec.service.calculator\\pricebyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{92D0E986-8DE6-460F-94E2-CAA3D22C59FA}|src\\BLL\\LauriesEC.Service.Calculator\\LauriesEC.Service.Calculator.csproj|solutionrelative:src\\bll\\lauriesec.service.calculator\\pricebyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18D21DB1-8870-40B6-B399-073285D03536}|src\\BLL\\LauriesEC.Fences.Services\\LauriesEC.Fences.Services.csproj|c:\\users\\rlaur\\onedrive\\desktop\\repos\\lauriesestimatecalculatorapi\\src\\bll\\lauriesec.fences.services\\fences\\aluminumcustom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18D21DB1-8870-40B6-B399-073285D03536}|src\\BLL\\LauriesEC.Fences.Services\\LauriesEC.Fences.Services.csproj|solutionrelative:src\\bll\\lauriesec.fences.services\\fences\\aluminumcustom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 484,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -101,21 +97,16 @@
               "Name": "ST:6:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AluminumCustom.cs",
-              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\BLL\\LauriesEC.Fences.Services\\Fences\\AluminumCustom.cs",
-              "RelativeDocumentMoniker": "src\\BLL\\LauriesEC.Fences.Services\\Fences\\AluminumCustom.cs",
-              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\BLL\\LauriesEC.Fences.Services\\Fences\\AluminumCustom.cs",
-              "RelativeToolTip": "src\\BLL\\LauriesEC.Fences.Services\\Fences\\AluminumCustom.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAjwDQAAAAJAAAA",
+              "DocumentIndex": 3,
+              "Title": "IInvoice.cs",
+              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\BLL\\LauriesEC.Service.Calculator\\Interfaces\\IInvoice.cs",
+              "RelativeDocumentMoniker": "src\\BLL\\LauriesEC.Service.Calculator\\Interfaces\\IInvoice.cs",
+              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\BLL\\LauriesEC.Service.Calculator\\Interfaces\\IInvoice.cs",
+              "RelativeToolTip": "src\\BLL\\LauriesEC.Service.Calculator\\Interfaces\\IInvoice.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T20:49:57.451Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T23:03:31.342Z"
             },
             {
               "$type": "Document",
@@ -125,7 +116,7 @@
               "RelativeDocumentMoniker": "src\\BLL\\LauriesEC.Service.Calculator\\Invoice.cs",
               "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\BLL\\LauriesEC.Service.Calculator\\Invoice.cs",
               "RelativeToolTip": "src\\BLL\\LauriesEC.Service.Calculator\\Invoice.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAhwIMAAABIAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAMcAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-09T20:38:52.799Z",
               "EditorCaption": ""
@@ -133,27 +124,57 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FenceController.cs",
-              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Controller\\FenceController.cs",
-              "RelativeDocumentMoniker": "src\\ApiWebL\\LauriesEC.Fences\\Controller\\FenceController.cs",
-              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Controller\\FenceController.cs",
-              "RelativeToolTip": "src\\ApiWebL\\LauriesEC.Fences\\Controller\\FenceController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAswCgAAAAZAAAA",
+              "Title": "InvoiceController.cs",
+              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Controller\\InvoiceController.cs",
+              "RelativeDocumentMoniker": "src\\ApiWebL\\LauriesEC.Fences\\Controller\\InvoiceController.cs",
+              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Controller\\InvoiceController.cs",
+              "RelativeToolTip": "src\\ApiWebL\\LauriesEC.Fences\\Controller\\InvoiceController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAADwvyAAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T20:38:11.294Z",
-              "EditorCaption": ""
-            },
+              "WhenOpened": "2024-09-09T18:15:18.878Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 46,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "24eda2b8-17e0-46d3-8608-7a7339e35984",
+        "Display": 1,
+        "X": -174,
+        "Y": 154,
+        "Width": 1090,
+        "Height": 727,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FencesFactory.cs",
-              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\BLL\\LauriesEC.Fences.Services\\Fences\\FencesFactory.cs",
-              "RelativeDocumentMoniker": "src\\BLL\\LauriesEC.Fences.Services\\Fences\\FencesFactory.cs",
-              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\BLL\\LauriesEC.Fences.Services\\Fences\\FencesFactory.cs",
-              "RelativeToolTip": "src\\BLL\\LauriesEC.Fences.Services\\Fences\\FencesFactory.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAewCsAAAAaAAAA",
+              "DocumentIndex": 1,
+              "Title": "GatesController.cs",
+              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Controller\\GatesController.cs",
+              "RelativeDocumentMoniker": "src\\ApiWebL\\LauriesEC.Fences\\Controller\\GatesController.cs",
+              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Controller\\GatesController.cs",
+              "RelativeToolTip": "src\\ApiWebL\\LauriesEC.Fences\\Controller\\GatesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T20:29:16.422Z",
+              "WhenOpened": "2024-09-10T01:09:39.548Z",
               "EditorCaption": ""
             },
             {
@@ -164,23 +185,9 @@
               "RelativeDocumentMoniker": "src\\BLL\\LauriesEC.Service.Calculator\\PriceByService.cs",
               "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\BLL\\LauriesEC.Service.Calculator\\PriceByService.cs",
               "RelativeToolTip": "src\\BLL\\LauriesEC.Service.Calculator\\PriceByService.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAewDIAAAAmAAAA",
+              "ViewState": "AQIAAB8AAAAAAAAAAIA3wDYAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T20:15:43.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "InvoiceController.cs",
-              "DocumentMoniker": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Controller\\InvoiceController.cs",
-              "RelativeDocumentMoniker": "src\\ApiWebL\\LauriesEC.Fences\\Controller\\InvoiceController.cs",
-              "ToolTip": "C:\\Users\\rlaur\\OneDrive\\Desktop\\repos\\LauriesEstimateCalculatorAPI\\src\\ApiWebL\\LauriesEC.Fences\\Controller\\InvoiceController.cs",
-              "RelativeToolTip": "src\\ApiWebL\\LauriesEC.Fences\\Controller\\InvoiceController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T18:15:18.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-09T20:15:43.848Z"
             }
           ]
         }
